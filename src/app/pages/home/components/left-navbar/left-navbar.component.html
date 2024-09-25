@@ -1,0 +1,40 @@
+<div class="main-container">
+    <div class="logo">
+        <h2>RedPost</h2>
+    </div>
+    <button class="create-post"><img [src]="plusSign">Create Post</button>
+    <ul class="nav-list">
+        <li>
+            <button class="home">
+                Home
+            </button>
+        </li>
+        <li>
+            <button class="search">
+                Search
+            </button>
+        </li>
+        <li>
+            <button class="notification">
+                Notification
+            </button>
+        </li>
+        <li>
+           <button class="chat">
+                Chat
+           </button>
+        </li>
+        <li>
+            <button class="saved">
+                Saved
+            </button>
+        </li>
+    </ul>
+    <div class="profile-section">
+        <img [src]="defaultAvatar"/>
+        <div class="profile-info">
+            <span class="name">{{name}}</span>
+            <span class="handler">{{handler}}</span>
+        </div>
+    </div>
+</div>
