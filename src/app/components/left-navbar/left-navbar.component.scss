@@ -1,0 +1,92 @@
+@import '../../global.scss';
+
+.main-container {
+    @include nav-primary;
+    padding-left: 6rem;
+    left: 0;
+    justify-content: space-around;
+
+    .logo h2 {
+        font-size: 2em;
+    }
+
+    .create-post {
+        @include btn-primary;
+
+        .plus-icon {
+            width: 20px;  // Adjust this value as needed
+            height: 20px; // Adjust this value as needed
+        }
+    }
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+        li {
+            margin-bottom: 0.8rem;
+
+            button {
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 1.15em;
+                cursor: pointer;
+                gap: 0.5rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                transition: background-color 0.2s;
+                display: flex;
+                align-items: center;
+                
+                .icon {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 4px;
+                }
+                .home-icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 4px;
+                }
+                .search-icon {
+                    width: 23px;
+                    height: 23px;
+                    margin-right: 4px;
+                }
+
+                &:hover {
+                    background-color: #202020;
+
+                }
+            }
+        }
+    }
+
+    .profile-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        cursor: pointer;
+
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            @include avatar
+        }
+
+        .name {
+            font-size: 1.12em;
+            font-weight: 600;
+        }
+        .handler {
+            font-size: 0.8em;
+            font-weight: 500;
+            color: #8e8e8e;
+        }
+    }
+}

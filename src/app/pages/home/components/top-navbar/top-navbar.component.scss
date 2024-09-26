@@ -1,0 +1,16 @@
+@import '../../../../global.scss';
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.25rem;
+    background-color: $secondary-bg;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

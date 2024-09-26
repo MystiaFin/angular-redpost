@@ -1,0 +1,26 @@
+@import '../../../../global.scss';
+
+.main-container {
+    @include nav-primary;
+    right: 0;
+    padding-right: 4rem;
+    padding-left: 2rem;
+
+    h2 {
+        padding-top: 2rem;
+        border-bottom: 2px solid #8f8f8f;
+        padding-bottom: 0.6rem;
+    }
+
+    .group {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 0.8rem;
+
+        .group-icon {
+            @include avatar
+        }
+
+    }
+}

@@ -1,0 +1,51 @@
+$primary-bg: #131313;
+$secondary-bg: #1C1C1C;
+$btn-secondary: #353535;
+$btn-hover: #202020;
+$text-primary: white;
+$text-secondary: #B6B6B6;
+
+$rounded-md: 25px;
+$rounded-full: 9999px;
+
+@mixin rounded-full {
+    border-radius: 9999px;
+};
+
+@mixin btn-primary {
+    background-color: #AD0000;
+        border-style: none;
+        padding: 0.6rem;
+        color: white;
+        border-radius: 9999px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 1.15em;
+        max-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: #c00303;
+        }
+}
+
+@mixin nav-primary {
+    height: 100vh;
+    width: 240px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: $primary-bg;
+    color: $text-primary;
+}
+
+@mixin avatar {
+    width: 40px;
+    border-radius: 50%;
+}

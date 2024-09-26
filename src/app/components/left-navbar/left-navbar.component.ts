@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './left-navbar.component.scss'
 })
 export class LeftNavbarComponent {
-  defaultAvatar = '../../../assets/default.png';
   plusSign: string = '../../../assets/plus-sign.svg';
+  home: string = '../../../assets/home.svg';
+  liked: string = '../../../assets/liked.svg';
+  notification: string = '../../../assets/notification.svg';
+  saved: string = '../../../assets/saved.svg';
+  search: string = '../../../assets/search.svg';
+  chat: string = '../../../assets/chat.svg';
+  defaultAvatar = '../../../assets/default.png';
   name: string = "name";
   handler: string = "@handler";
 }
