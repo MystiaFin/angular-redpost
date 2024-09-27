@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './right-navbar.component.scss'
 })
 export class RightNavbarComponent {
-  groupName: string = 'Group Name';
+  chatName: string = 'Username';
+  chat: string = '../../../../../assets/chat.svg';
 }

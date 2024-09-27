@@ -1,0 +1,15 @@
+@import '../../global.scss';
+
+.main-container {
+    background-color: $primary-bg;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include p-y-1;
+    gap: 1rem;
+
+    button {
+        background-color: transparent;
+        border-style: none;
+    }
+}

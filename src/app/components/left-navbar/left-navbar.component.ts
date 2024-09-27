@@ -14,7 +14,6 @@ export class LeftNavbarComponent {
   notification: string = '../../../assets/notification.svg';
   saved: string = '../../../assets/saved.svg';
   search: string = '../../../assets/search.svg';
-  chat: string = '../../../assets/chat.svg';
   defaultAvatar = '../../../assets/default.png';
   name: string = "name";
   handler: string = "@handler";

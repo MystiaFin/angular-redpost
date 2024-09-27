@@ -7,6 +7,10 @@ $text-secondary: #B6B6B6;
 
 $rounded-md: 25px;
 $rounded-full: 9999px;
+$lg-screen: 1200px;
+$md-screen: 1199px;
+$sm-screen: 768px;
+$xs-screen: 575px;
 
 @mixin rounded-full {
     border-radius: 9999px;
@@ -49,3 +53,10 @@ $rounded-full: 9999px;
     width: 40px;
     border-radius: 50%;
 }
+
+@mixin p-y-1 {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+

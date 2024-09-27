@@ -1,12 +1,21 @@
 <div class="main-container">
-    <h2>
-        Your Communities
-    </h2>
-    <div class="group-container">
-        <div class="group">
-            <img src="../../../../../assets/default.png" class="group-icon">
-            <div class="group-name">
-                {{groupName}}
+    <header>
+        <div class="title">
+            <img [src]="chat" class="title-icon"/>
+            <h2>
+                Recent Chats
+            </h2>
+        </div>
+        <button class="new-chat">
+            +
+        </button>
+
+    </header>
+    <div class="chat-container">
+        <div class="chats">
+            <img src="../../../../../assets/default.png" class="chat-icon">
+            <div class="chat-name">
+                {{chatName}}
             </div>
         </div>
     </div>

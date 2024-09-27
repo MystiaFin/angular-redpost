@@ -1,32 +1,33 @@
 <div class="main-container">
     <div class="logo">
-        <h2>RedPost</h2>
+        <h2 class="desktop-logo">RedPost</h2>
+        <h2 class="mobile-logo">R</h2>
     </div>
-    <button class="create-post"><img [src]="plusSign" class="plus-icon">Create Post</button>
+    <button class="create-post"><img [src]="plusSign" class="plus-icon"><span class="text">Create Post</span></button>
     <ul class="nav-list">
         <li>
             <button class="home">
-                <img [src]="home" class="home-icon"/> Home
+                <img [src]="home" class="home-icon"/> <span class="text">Home</span>
             </button>
         </li>
         <li>
             <button class="search">
-                <img [src]="search" class="search-icon"/> Search
+                <img [src]="search" class="search-icon"/> <span class="text">Search</span>
             </button>
         </li>
         <li>
             <button class="notification">
-                <img [src]="notification" class="icon"/> Notification
+                <img [src]="notification" class="icon"/> <span class="text">Notification</span>
             </button>
         </li>
         <li>
            <button class="chat">
-            <img [src]="liked" class="icon"/>Liked Post
+               <img [src]="liked" class="icon"/><span class="text">Liked Post</span>
            </button>
         </li>
         <li>
             <button class="saved">
-                <img [src]="saved" class="icon"/>Saved
+                <img [src]="saved" class="icon"/><span class="text">Saved</span>
             </button>
         </li>
     </ul>
