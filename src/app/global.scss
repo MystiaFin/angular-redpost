@@ -54,6 +54,10 @@ $xs-screen: 575px;
     width: 40px;
     border-radius: 50%;
 }
+@mixin avatarMobile {
+    width: 35px;
+    border-radius: 50%;
+}
 
 @mixin p-y-1 {
     padding-top: 0.35rem;

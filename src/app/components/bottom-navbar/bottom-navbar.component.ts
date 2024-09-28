@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconService} from "iconInjection";
 
 @Component({
   selector: 'app-bottom-navbar',
@@ -8,10 +9,15 @@ import { Component } from '@angular/core';
   styleUrl: './bottom-navbar.component.scss'
 })
 export class BottomNavbarComponent {
+
+    constructor(private svgIconService: IconService) {}
+
+    getIcon(iconName: string): string {
+        return this.svgIconService.getIcon(iconName);
+    }
+
     plusSign: string = '../../../assets/plus-sign.svg';
     home: string = '../../../assets/home.svg';
-    liked: string = '../../../assets/liked.svg';
     notification: string = '../../../assets/notification.svg';
-    saved: string = '../../../assets/saved.svg';
     search: string = '../../../assets/search.svg';
 }
