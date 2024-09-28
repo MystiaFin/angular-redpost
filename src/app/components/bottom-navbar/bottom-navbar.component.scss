@@ -1,15 +1,26 @@
 @import '../../global.scss';
 
 .main-container {
-    background-color: $primary-bg;
+    background-color: $bg-primary;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     @include p-y-1;
-    gap: 1rem;
+    gap: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     button {
         background-color: transparent;
         border-style: none;
+    }
+
+    @media (min-width: #{$sm-screen}) {
+        display: flex;
+    }
+
+    @media (min-width: 769px) {
+        display: none;
     }
 }

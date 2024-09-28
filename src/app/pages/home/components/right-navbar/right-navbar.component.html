@@ -1,7 +1,7 @@
 <div class="main-container">
     <header>
         <div class="title">
-            <img [src]="chat" class="title-icon"/>
+            <img [src]="getIcon('chat')" class="title-icon"/>
             <h2>
                 Recent Chats
             </h2>
@@ -13,7 +13,7 @@
     </header>
     <div class="chat-container">
         <div class="chats">
-            <img src="../../../../../assets/default.png" class="chat-icon">
+            <img [src]="getIcon('default')" class="avatar-icon">
             <div class="chat-name">
                 {{chatName}}
             </div>

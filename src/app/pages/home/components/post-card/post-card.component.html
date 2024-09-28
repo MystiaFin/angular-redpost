@@ -1,11 +1,25 @@
 <div class="post-card">
-    <div class="header">
-        <div class="profile-section">
-            <img [src]="defaultAvatar"/>
-            <div class="profile-info">
-                <span class="name">{{name}}</span>
-                <span class="handler">{{handler}}</span>
+    <div class="container">
+        <div class="header">
+            <div class="profile">
+                <img [src]="getIcon('default')" class="avatar-icon"/>
+                <div class="metadata">
+                    <span class="name">{{name}}</span>
+                    <span class="handler">{{handler}}</span>
+                    <span class="date">{{date}}</span>
+                </div>
+            </div>
+            <div class="more">
+                ...
             </div>
         </div>
+        <div class="content">
+            <div class="text">
+                {{text}}
+            </div>
+        </div>
+        <div class="post-footer">
+            <
+        </div>
     </div>
-</div>>
+</div>

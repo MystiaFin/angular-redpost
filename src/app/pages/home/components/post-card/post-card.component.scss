@@ -1,34 +1,56 @@
-
+@import '../../../../global.scss';
 
 .post-card {
     display: flex;
     justify-content: center;
-    color: white;
+    width: 100%; // Add this line
 
-    .profile-section {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        cursor: pointer;
+    .container {
+        background-color: $bg-post-card;
+        border-radius: $rounded-md;
+        width: 100%; // Change max-width to width
+        max-width: 35rem; // Keep this line
+        margin: 1rem;
+        padding: 1.5rem;
+        padding-top: 0.5rem;
+        color: white;
 
-        .profile-info {
+        .header {
             display: flex;
-            flex-direction: column;
-        }
-        img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+
+            .profile {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+
+                .avatar-icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .metadata {
+                    display: flex;
+                    flex-direction: column;
+
+                    .name {
+                        font-weight: bold;
+                        color: white;
+                    }
+                    .handler {
+                        font-size: 0.8em;
+                        color: #939393;
+                    }
+                    .date {
+                        font-size: 0.8em;
+                        color: #939393;
+                    }
+                }
+            }
         }
 
-        .name {
-            font-size: 1.12em;
-            font-weight: 600;
-        }
-        .handler {
-            font-size: 0.8em;
-            font-weight: 500;
-            color: #8e8e8e;
-        }
+
+
     }
 }

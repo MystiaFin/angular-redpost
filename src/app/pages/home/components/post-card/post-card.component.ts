@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconService } from "iconInjection";
 
 @Component({
   selector: 'app-post-card',
@@ -8,7 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './post-card.component.scss'
 })
 export class PostCardComponent {
-  defaultAvatar = '../../../assets/default.png';
-  name: string = "name";
-  handler: string = "@handler";
+
+    constructor(private svgIconService: IconService) {}
+
+    getIcon(iconName: string): string {
+        return this.svgIconService.getIcon(iconName);
+    }
+    name: string = "name";
+    handler: string = "@handler";
+    date: string = "06 May 2024";
+    text: string = 'this is a post card';
 }

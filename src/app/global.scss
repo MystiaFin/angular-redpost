@@ -1,5 +1,6 @@
-$primary-bg: #131313;
-$secondary-bg: #1C1C1C;
+$bg-primary: #131313;
+$bg-secondary: #1C1C1C;
+$bg-post-card: #2C2C2C;
 $btn-secondary: #353535;
 $btn-hover: #202020;
 $text-primary: white;
@@ -45,7 +46,7 @@ $xs-screen: 575px;
     flex-direction: column;
     position: fixed;
     top: 0;
-    background-color: $primary-bg;
+    background-color: $bg-primary;
     color: $text-primary;
 }
 

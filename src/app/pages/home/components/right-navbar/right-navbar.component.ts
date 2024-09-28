@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconService } from 'iconInjection';
 
 @Component({
   selector: 'app-right-navbar',
@@ -9,5 +10,9 @@ import { Component } from '@angular/core';
 })
 export class RightNavbarComponent {
   chatName: string = 'Username';
-  chat: string = '../../../../../assets/chat.svg';
+    constructor(private svgIconService: IconService) {}
+
+    getIcon(iconName: string): string {
+        return this.svgIconService.getIcon(iconName);
+    }
 }

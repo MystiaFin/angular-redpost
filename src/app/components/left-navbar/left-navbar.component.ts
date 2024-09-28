@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconService } from 'iconInjection';
 
 @Component({
   selector: 'app-left-navbar',
@@ -8,13 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './left-navbar.component.scss'
 })
 export class LeftNavbarComponent {
-  plusSign: string = '../../../assets/plus-sign.svg';
-  home: string = '../../../assets/home.svg';
-  liked: string = '../../../assets/liked.svg';
-  notification: string = '../../../assets/notification.svg';
-  saved: string = '../../../assets/saved.svg';
-  search: string = '../../../assets/search.svg';
-  defaultAvatar = '../../../assets/default.png';
+    constructor(private svgIconService: IconService) {}
+
+    getIcon(iconName: string): string {
+        return this.svgIconService.getIcon(iconName);
+    }
   name: string = "name";
   handler: string = "@handler";
 }
