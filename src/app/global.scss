@@ -26,7 +26,6 @@ $xs-screen: 575px;
         font-family: 'Poppins', 'sans-serif';
         font-weight: 600;
         font-size: 1.15em;
-        max-width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,6 +61,11 @@ $xs-screen: 575px;
 @mixin p-y-1 {
     padding-top: 0.35rem;
     padding-bottom: 0.35rem;
+}
+
+@mixin card {
+    background-color: $bg-post-card;
+    border-radius: $rounded-md;
 }
 
 

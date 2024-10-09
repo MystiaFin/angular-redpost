@@ -1,0 +1,73 @@
+@import '../../../global.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+
+    h2 {
+        font-size: 2.5rem;
+        p {
+            font-size: 1.4rem;
+            font-weight: lighter;
+        }
+    }
+}
+
+@mixin card {
+    background-color: $bg-post-card;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 260px;
+}
+
+.card {
+    @include card;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+
+        label {
+            margin-bottom: 0.2rem;
+        }
+
+        input {
+            padding: 0.3rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 0.2rem;
+            border: none;
+            background-color: #414141;
+            color: white;
+        }
+    }
+}
+
+button {
+    @include btn-primary;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    font-weight: normal;
+}
+
+.card-2 {
+    @include card;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
