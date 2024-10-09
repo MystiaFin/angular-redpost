@@ -9,7 +9,13 @@ import {BottomNavbarComponent} from "../../components/bottom-navbar/bottom-navba
 @Component({
   selector: 'app-home',
   standalone: true,
-    imports: [LeftNavbarComponent, PostCardComponent, TopNavbarComponent, RightNavbarComponent, CreateHeaderComponent, BottomNavbarComponent],
+  imports: [
+    LeftNavbarComponent, 
+    PostCardComponent, 
+    TopNavbarComponent, 
+    RightNavbarComponent, 
+    CreateHeaderComponent, 
+    BottomNavbarComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
